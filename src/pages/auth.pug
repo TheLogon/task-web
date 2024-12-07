@@ -1,0 +1,18 @@
+extends ../layouts/base
+
+block variables
+  - var title='Авторизация';
+  - var pageClass='auth';
+
+block content
+  .auth
+    .auth__inner 
+      h1 Авторизация
+      form.auth__form
+        .auth__form_input 
+          p Логин
+          input(type="text", name="login")
+        .auth__form_input 
+          p Пароль
+          input(type="text", name="login")
+        button.auth__form_btn Войти

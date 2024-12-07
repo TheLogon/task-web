@@ -1,0 +1,26 @@
+extends ../layouts/base
+
+block variables
+  - var title='Страницы';
+  - var pageClass='pages';
+
+block content
+  .container(style='height: 500px')
+    nav
+      ul
+        li
+          a(href='/auth.html') Авторизация
+        li
+          a(href='/main.html') Главная
+        li
+          a(href='/clients.html') Клиенты
+        li
+          a(href='/tasks.html') Дела
+        li
+          a(href='/reports.html') Сраница отчетов
+        li
+          a(href='/report.html') Детальная страница отчета
+        li
+          a(href='/bids.html') Заявки в суд
+        li
+          a(href='/users.html') Пользователи

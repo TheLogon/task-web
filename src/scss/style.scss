@@ -1,0 +1,19 @@
+// Глобавльные стили
+@import '~normalize.css';
+@import './global';
+@import './varibles';
+
+// Стили компонентов
+@import '../components/Header/Header';
+
+
+@import '../components/Modal/Modal';
+@import '../components/Modal/Add-User/Add-User';
+@import '../components/Modal/Edit-User/Edit-User';
+@import '../components/Modal/Delete-User/Delete-User';
+@import '../components/Modal/Info-User/Info-User';
+
+@import '../components/Modal/Add-Bid/Add-Bid';
+@import '../components/Modal/Edit-Bid/Edit-Bid';
+@import '../components/Modal/Delete-Bid/Delete-Bid';
+@import '../components/Modal/Info-Bid/Info-Bid';

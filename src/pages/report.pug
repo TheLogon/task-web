@@ -1,0 +1,42 @@
+extends ../layouts/base
+
+block variables
+  - var title='Детальная страница отчета';
+  - var pageClass='report';
+
+block content
+  .report
+    .container
+      .report__inner 
+        .report__header 
+          a.report__back(href="/reports.html") 
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.4999 20.1281C12.3416 20.1281 12.1832 20.0625 12.0582 19.9219L6.6249 13.8094C5.74157 12.8156 5.74157 11.1844 6.6249 10.1906L12.0582 4.07811C12.2999 3.80624 12.6999 3.80624 12.9416 4.07811C13.1832 4.34999 13.1832 4.79999 12.9416 5.07186L7.50824 11.1844C7.10824 11.6344 7.10824 12.3656 7.50824 12.8156L12.9416 18.9281C13.1832 19.2 13.1832 19.65 12.9416 19.9219C12.8166 20.0531 12.6582 20.1281 12.4999 20.1281Z" fill="#637381" />
+            </svg>
+            | Назад
+          a.report__exports(href="#") 
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.0015 8.99875H17.0023C18.1073 8.99875 19.0031 9.89455 19.0031 10.9996V19.0029C19.0031 20.1079 18.1073 21.0037 17.0023 21.0037H6.99815C5.89312 21.0037 4.99731 20.1079 4.99731 19.0029V10.9996C4.99731 9.89455 5.89312 8.99875 6.99815 8.99875H8.99898" stroke="#637381" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.0002 15.0012V2.99625" stroke="#637381" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15.0013 5.9975L12 2.99625L8.99878 5.9975" stroke="#637381" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            | Экспортировать данные по отчету
+        .report__info 
+          .report__info_row 
+            p Юрист
+            p Дмитрий А. В.
+          .report__info_row 
+            p Клиент
+            p Иван А. В.
+          .report__info_row 
+            p Потраченное время
+            p 28 ч.
+          .report__info_row 
+            p Суд
+            p Свердловский областной суд
+          .report__info_row 
+            p № дела
+            p 124
+          .report__info_row 
+            p Решение суда
+            p Полностью оправдан

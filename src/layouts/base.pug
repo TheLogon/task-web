@@ -1,0 +1,23 @@
+block variables
+
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title}
+    link(rel="stylesheet" href="../index.scss")
+    script(src="../index.js" defer="defer")
+  body(class=`page`)
+    include ../components/Modal/Add-User/Add-User
+    include ../components/Modal/Edit-User/Edit-User
+    include ../components/Modal/Delete-User/Delete-User
+    include ../components/Modal/Info-User/Info-User
+
+    include ../components/Modal/Add-Bid/Add-Bid
+    include ../components/Modal/Edit-Bid/Edit-Bid
+    include ../components/Modal/Delete-Bid/Delete-Bid
+    include ../components/Modal/Info-Bid/Info-Bid
+    if pageClass !== 'auth'
+      include ../components/Header/Header
+    main(class=`page-content page-${pageClass}`)
+      block content

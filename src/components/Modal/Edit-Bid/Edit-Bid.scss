@@ -1,0 +1,29 @@
+.edit-bid-modal {
+  .modal-content {
+    max-width: 800px;
+    height: 700px;
+
+    @media (max-width: 800px) {
+      left: 15px;
+      right: 15px;
+      transform: translateX(0) translateY(-50%);
+      width: unset;
+    }
+  }
+
+  &-wrapper {
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .auth__form_btn {
+    margin-left: 195px;
+  }
+
+  .auth__form_input p {
+    min-width: 175px;
+    text-align: left;
+  }
+}

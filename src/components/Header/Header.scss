@@ -1,0 +1,131 @@
+.header {
+  padding: 24px 0;
+
+  @media (max-width:747px) {
+    padding: 14px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media (max-width: 810px) {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      z-index: 100;
+      flex-direction: column;
+      justify-content: center;
+      transition: all .2s ease-in-out;
+
+      &.active {
+        left: 0;
+      }
+    }
+  }
+
+  .menu__btn {
+    display: none;
+
+    @media (max-width: 810px) {
+      display: flex;
+
+    }
+  }
+
+  &__back_btn {
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #637381;
+    transition: all .2s ease-in-out;
+    padding: 12px;
+    display: none;
+
+    @media (max-width: 810px) {
+      display: flex;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+
+    @media (max-width: 940px) {
+      gap: 0;
+    }
+
+    @media (max-width: 810px) {
+      flex-direction: column;
+      max-width: 215px;
+      width: 100%;
+    }
+
+    .line {
+      display: none;
+      height: 1px;
+      width: 100%;
+      background: #ededed;
+      margin: 24px 0;
+
+      @media (max-width: 810px) {
+        display: block;
+      }
+    }
+
+    &_item {
+      padding: 10px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #637381;
+      transition: all .2s ease-in-out;
+
+      @media (max-width: 810px) {
+        color: #111928;
+      }
+
+      &.active {
+        color: #111928;
+      }
+
+      &:hover {
+        color: #111928;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+
+  &__auth {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    @media (max-width: 810px) {
+      p {
+        color: #111928;
+
+      }
+    }
+
+    a {
+      width: 24px;
+      height: 24px;
+
+    }
+  }
+}

@@ -1,0 +1,82 @@
+extends ../layouts/base
+
+block variables
+  - var title='Отчеты';
+  - var pageClass='reports';
+
+block content
+  .main
+    .container
+      .main__tabs
+        .table-wrapper
+          table.table
+            thead
+              tr
+                th Название дела
+                th Дата генерации
+            tbody
+              tr 
+                td Дмитрий А. В.
+                td(style="justify-content: flex-end;") 15.11.2024
+              tr 
+                td Дмитрий А. В.
+                td(style="justify-content: flex-end;") 15.11.2024
+              tr 
+                td Дмитрий А. В.
+                td(style="justify-content: flex-end;") 15.11.2024
+              tr 
+                td Дмитрий А. В.
+                td(style="justify-content: flex-end;") 15.11.2024
+              tr 
+                td Дмитрий А. В.
+                td(style="justify-content: flex-end;") 15.11.2024
+          .adaptive-cards 
+            .adaptive-card
+              .adaptive-card__row 
+                p ФИО
+                p Дмитрий А. В.
+              .adaptive-card__row 
+                p Дата генерации
+                p 15.11.2024
+            .adaptive-card
+              .adaptive-card__row 
+                p ФИО
+                p Дмитрий А. В.
+              .adaptive-card__row 
+                p Дата генерации
+                p 15.11.2024
+            .adaptive-card
+              .adaptive-card__row 
+                p ФИО
+                p Дмитрий А. В.
+              .adaptive-card__row 
+                p Дата генерации
+                p 15.11.2024
+            .adaptive-card
+              .adaptive-card__row 
+                p ФИО
+                p Дмитрий А. В.
+              .adaptive-card__row 
+                p Дата генерации
+                p 15.11.2024
+            .adaptive-card
+              .adaptive-card__row 
+                p ФИО
+                p Дмитрий А. В.
+              .adaptive-card__row 
+                p Дата генерации
+                p 15.11.2024
+          .table-pagination 
+            a.table-pagination__back(href="#") 
+              <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 23.6095C14.81 23.6095 14.62 23.5308 14.47 23.362L7.95 16.027C6.89 14.8345 6.89 12.877 7.95 11.6845L14.47 4.3495C14.76 4.02325 15.24 4.02325 15.53 4.3495C15.82 4.67575 15.82 5.21575 15.53 5.542L9.01 12.877C8.53 13.417 8.53 14.2945 9.01 14.8345L15.53 22.1695C15.82 22.4958 15.82 23.0358 15.53 23.362C15.38 23.5195 15.19 23.6095 15 23.6095Z" fill="#DBDBDB" />
+              </svg>
+            .table-pagination__pages 
+              a.table-pagination__page.active(href="#") 1
+              a.table-pagination__page(href="#") 2
+              a.table-pagination__page(href="#") 3
+              a.table-pagination__page(href="#") 4
+            a.table-pagination__next(href="#")
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.44876 17.5245C1.25876 17.5245 1.06876 17.4545 0.918763 17.3045C0.628763 17.0145 0.628763 16.5345 0.918763 16.2445L7.43876 9.7245C7.91876 9.2445 7.91876 8.4645 7.43876 7.9845L0.918763 1.4645C0.628763 1.1745 0.628763 0.694496 0.918763 0.404496C1.20876 0.114496 1.68876 0.114496 1.97876 0.404496L8.49876 6.9245C9.00876 7.4345 9.29876 8.1245 9.29876 8.8545C9.29876 9.5845 9.01876 10.2745 8.49876 10.7845L1.97876 17.3045C1.82876 17.4445 1.63876 17.5245 1.44876 17.5245Z" fill="#DBDBDB" />
+              </svg>
